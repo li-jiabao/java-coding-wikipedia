@@ -1,0 +1,85 @@
+---
+title: Math
+author: lijiabao
+date: 2020-11-24 14:01:10.920160700 +0800
+category: JavaNotebook
+categories: JavaNotebook
+tags: JavaNotebook
+---
+Math的一些方法：
+- `public static xxx abs(xxx)`
+- `public static double sin(double)`
+- `public static double cos(double)`
+- `public static double tan(double)`
+- `public static double atan2(double,double)`
+- `public static double sqrt(double)`
+- `public static double log(double)`
+- `public static double log10(double)`
+- `public static double pow(double,double)`
+- `public static double exp(double)`
+- `public static xxx min(xxx,xxx)`
+- `public static xxx max(xxx,xxx)`
+- `public static double floor(double)`
+- `public static double ceil(double)`
+- `public static double rint(double)`
+- `public static int addExact(int,int)`
+- `public static long addExact(long,long)`
+- `public static long decrementExact(long)`
+- `public static int decrementExact(int)`
+- `public static int incrementExact(int)`
+- `public static long incrementExact(long)`
+- `public static int multiplyExact(int,int)`
+- `public static long multiplyExact(long,long)`
+- `public static long multiplyExact(long,int)`
+- `public static long multiplyHigh(long,long)`
+- `public static long negateExact(long)`
+- `public static int negateExact(int)`
+- `public static long subtractExact(long,long)`
+- `public static int subtractExact(int,int)`
+- `public static float fma(float,float,float)`
+- `public static double fma(double,double,double)`
+- `public static float scalb(float,int)`
+- `public static double scalb(double,int)`
+- `public static double copySign(double,double)`
+- `public static float copySign(float,float)`
+- `public static int getExponent(float)`
+- `public static int getExponent(double)`
+- `public static double signum(double)`
+- `public static float signum(float)`
+- `public static int floorMod(long,int)`
+- `public static int floorMod(int,int)`
+- `public static long floorMod(long,long)`
+- `public static double asin(double)`
+- `public static double acos(double)`
+- `public static double atan(double)`
+- `public static double cbrt(double)`
+- `public static double IEEEremainder(double,double)`
+- `public static long floorDiv(long,long)`
+- `public static int floorDiv(int,int)`
+- `public static long floorDiv(long,int)`
+- `static double powerOfTwoD(int)`
+- `static float powerOfTwoF(int)`
+- `public static double sinh(double)`
+- `public static double cosh(double)`
+- `public static double tanh(double)`
+- `public static double hypot(double,double)`
+- `public static double expm1(double)`
+- `public static double log1p(double)`
+- `public static double toRadians(double)`
+- `public static double toDegrees(double)`
+- `public static long round(double)`
+- `public static int round(float)`
+- `public static double random()`
+- `public static int toIntExact(long)`
+- `public static long multiplyFull(int,int)`
+- `public static int absExact(int)`
+- `public static long absExact(long)`
+- `public static double ulp(double)`
+- `public static float ulp(float)`
+- `public static double nextAfter(double,double)`
+- `public static float nextAfter(float,double)`
+- `public static double nextUp(double)`
+- `public static float nextUp(float)`
+- `public static double nextDown(double)`
+- `public static float nextDown(float)`
+

@@ -1,0 +1,74 @@
+# 二叉树的序列化和反序列化
+
+## DFS解法
+
+递归方法：
+
+```java
+/**
+ * Definition for a binary tree node.
+ * public class TreeNode {
+ *     int val;
+ *     TreeNode left;
+ *     TreeNode right;
+ *     TreeNode(int x) { val = x; }
+ * }
+ */
+public class Codec {
+    
+    private StringBuilder str;  // 用来在深度优先搜索遍历的
+    private int i=0;  // 辅助变量，记录当前遍历到了字符串数组的哪一位置
+    
+    // Encodes a tree to a single string.
+    public String serialize(TreeNode root) {
+        if (root==null) return "";
+        str = new StringBuilder();
+        dfsSerialize(root);
+        return str.toString();
+    }
+
+    // 深度优先搜索将树结构转换为字符串进行序列化输出
+    private void dfsSerialize(TreeNode root) {
+        // 为空时，就将空节点转换为特殊字符来记录
+        if (root==null) {
+            str.append("#,");
+            return;
+        }
+        // 采取的是前序遍历记录序列化顺序，之后才好利用这个去构建树，因为需要从根节点开始构建
+        str.append(root.val+",");
+        dfsSerialize(root.left);
+        dfsSerialize(root.right);
+    }
+
+    // Decodes your encoded data to tree.
+    public TreeNode deserialize(String data) {
+        if (data=="") return null;
+        String[] strs = data.split(",");
+        return buildTree(strs);
+    }
+
+    // 利用同样的深度优先遍历搜索方式构建树
+    private TreeNode dfsDeserialize(String[] strs) {
+        // 遍历到特殊字符时，说明此时到空节点了，返回null即可
+        // 遇到null就需要返回构建另外一侧子树了
+        if (strs[i].equals("#")) {
+            i++;
+            return null;
+        }
+        // 将根节点创建节点，之后就是左右子树的构建
+        // 深度优先的特点就是先到最底部，再换另外一侧节点遍历
+        // 因此在遍历过程中需要一个全局变量来记录当前遍历的位置
+        TreeNode node = new TreeNode(Integer.parseInt(strs[i]));
+        i++;
+        node.left = dfsDeserialize(strs);
+        node.right = dfsDeserialize(strs);
+        return node;
+    }
+}
+
+// Your Codec object will be instantiated and called as such:
+// Codec ser = new Codec();
+// Codec deser = new Codec();
+// TreeNode ans = deser.deserialize(ser.serialize(root));
+```
+

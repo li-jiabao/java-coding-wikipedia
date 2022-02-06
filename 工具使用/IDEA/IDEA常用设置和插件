@@ -1,0 +1,44 @@
+# IDEA配置
+
+## 常用的插件
+
+- `Alibaba Java Coding Guidelines`：阿里巴巴的编程规范插件，可以检测代码中的不规范地方并提示，可以帮助你养成良好的Java编程规范
+- `CamelCase`：驼峰命名法和其他方法的一个快速转换插件，安装好插件之后需要在设置de editor里面找到CamelCase进行你想要进行快速转换的一些命名规范，染回选中想要改变的内容使用快捷键进行快速的转换
+- `CodeGlance`：IDEA编码界面右上角的小窗格，可以显示当前编码区域所处的位置
+- `Codota`和`Tabnine`：快速补全插件，基于AI自动提示，比较好用,tabnine是升级版
+- `Gitee`：和码云相通的插件
+- `Grep Console`：控制台插件，可以高亮显示debug信息和日志信息等等，可以自定义输出格式
+- `IDE Eval Reset`：idea不断续期的插件
+- `key Promoter X`：当你使用鼠标点击了某些操作之后，这个插件会提示你相关的快捷键，帮助记忆某些快捷键
+- `Maven helper`：帮助解决maven依赖配置文件的一些问题
+- `MybatisX`：帮助在你创建了Dao层的方法，可以快速跳转到mapper层中创建对应的方法并支持相互跳转
+- `Rainbow Brackets`：彩虹色的括号，支持不同的颜色区分
+- `RestfulTool`：get、post等方法执行的插件，快速的测试业务是否成功创建
+- `Translation`：翻译插件
+- `Simplified Chinese `：中文语言包，可以设置为中文
+- `Save Action`：在保存代码的时候自动格式化文件内容，下载好插件之后可以去设置里面设置对应的想要执行的格式化操作即可
+
+
+
+## 常用的IDEA设置
+
+- `创建自定义的live template`：指定你每次想要生成的模板内容，可以通过敲击某些快捷字母快速生成指定的模板内容，像sout等快捷键就是生成的live template
+- `File and Code Template`：里面可以定义文件头，每次新建文件的时候可以添加上指定的内容
+- 对于实现了Serializable接口的类，可以指定inspection，提示需要加上`private static final serialVersionUID`这个内容，避免类发生修改之后，之前序列化的内容不能再进行反序列化
+
+## 常用快捷键
+
+ctrl+f12：查看类下面的方法
+
+ctrl+h：查看当前类或接口的子类或者实现类
+
+ctrl+alt+l：格式化代码
+
+ctrl+u：跳转到父类
+
+ctrl+p：提示方法的参数类型
+
+ctrl+q：提示信息，javadoc内容快速显示
+
+ctrl+shift+p：查看返回类型
+
